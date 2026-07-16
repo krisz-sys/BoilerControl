@@ -1,4 +1,4 @@
-How it works?<br>
+How it works?<br><br>
 The ESP8266 runs a web server that displays various data.
 The microcontroller turns on the boiler if:
 
