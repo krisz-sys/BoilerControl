@@ -21,6 +21,9 @@ Here is the PCB layout:
 
 <img width="583" height="695" alt="Screenshot 2026-07-17 001455" src="https://github.com/user-attachments/assets/ed5aec58-a259-44bf-83ae-e122ae7536b5" />
 <br><br>
+
+You can find the AutoCAD Eagle design files as HeaterController_PCB.
+
 If the web server is live, you should see the following view. The most important elements are the slider, the temperature value, and the time schedule table:
 <br>
 <img width="500" height="360" alt="Screenshot 2026-07-17 001816" src="https://github.com/user-attachments/assets/365f372d-a229-4e6f-976f-df566754408b" />
