@@ -58,6 +58,8 @@ float temperature=-10;
 #define GET_TSCHS 57
 #define SEND_TSCHS 58
 
+
+
 //---------------------------------------- Heater
 #define HEATER D5                             // GPIO14
 //#define HEATER D1                             // GPIO05
