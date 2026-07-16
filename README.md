@@ -17,5 +17,10 @@ You can see the circuit schematic below:
 
 <img width="1253" height="697" alt="Screenshot 2026-07-16 235613" src="https://github.com/user-attachments/assets/3b4976e9-78b3-4aa3-b85b-c5ef3a1875ac" />
 
+Here is the PCB layout:
 
-
+<img width="583" height="695" alt="Screenshot 2026-07-17 001455" src="https://github.com/user-attachments/assets/ed5aec58-a259-44bf-83ae-e122ae7536b5" />
+<br><br>
+If the webserver is live, you should see the following view. The most important elements are the slider, the temperature value, and the time schedule table:
+<br>
+<img width="500" height="360" alt="Screenshot 2026-07-17 001816" src="https://github.com/user-attachments/assets/365f372d-a229-4e6f-976f-df566754408b" />
