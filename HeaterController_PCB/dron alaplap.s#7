@@ -4770,34 +4770,6 @@ RJ45 Jack connectors&lt;br&gt;
 </library>
 <library name="MyLIB">
 <packages>
-<package name="ESP8266">
-<wire x1="0.003" y1="-1.488" x2="0.003" y2="22.512" width="0.127" layer="21"/>
-<wire x1="0.003" y1="22.512" x2="16.003" y2="22.512" width="0.127" layer="21"/>
-<wire x1="16.003" y1="22.512" x2="16.003" y2="-1.488" width="0.127" layer="21"/>
-<wire x1="16.003" y1="-1.488" x2="0.003" y2="-1.488" width="0.127" layer="21"/>
-<pad name="CS0" x="3.003" y="-1.488" drill="0.6"/>
-<pad name="MISO" x="5.003" y="-1.488" drill="0.6"/>
-<pad name="GPIO09" x="7.003" y="-1.488" drill="0.6"/>
-<pad name="GPIO10" x="9.003" y="-1.488" drill="0.6"/>
-<pad name="MOSI" x="11.003" y="-1.488" drill="0.6"/>
-<pad name="SCLK" x="13.003" y="-1.488" drill="0.6"/>
-<pad name="VCC" x="0.003" y="0.012" drill="0.6"/>
-<pad name="GPIO13" x="0" y="2" drill="0.6"/>
-<pad name="GPIO12" x="0" y="4" drill="0.6"/>
-<pad name="GPIO14" x="0" y="6" drill="0.6"/>
-<pad name="GPIO16" x="0" y="8" drill="0.6"/>
-<pad name="EN" x="0" y="10" drill="0.6"/>
-<pad name="ADC" x="0" y="12" drill="0.6"/>
-<pad name="RST" x="0" y="14" drill="0.6"/>
-<pad name="GND" x="16" y="0" drill="0.6"/>
-<pad name="GPIO15" x="16" y="2" drill="0.6"/>
-<pad name="GPIO02" x="16" y="4" drill="0.6"/>
-<pad name="GPIO00" x="16" y="6" drill="0.6"/>
-<pad name="GPIO04" x="16" y="8" drill="0.6"/>
-<pad name="GPIO05" x="16" y="10" drill="0.6"/>
-<pad name="RX" x="16" y="12" drill="0.6"/>
-<pad name="TX" x="16" y="14" drill="0.6"/>
-</package>
 <package name="PIN">
 <pad name="TX" x="0" y="0" drill="0.6" shape="square"/>
 <pad name="RX" x="1.9" y="0" drill="0.6" shape="square"/>
@@ -4819,36 +4791,31 @@ RJ45 Jack connectors&lt;br&gt;
 <smd name="IN" x="1" y="-0.75" dx="0.7" dy="1.75" layer="1"/>
 <smd name="GND" x="5.5" y="-0.75" dx="0.7" dy="1.75" layer="1"/>
 </package>
+<package name="ESP8266">
+<wire x1="0.003" y1="-1.488" x2="0.003" y2="22.512" width="0.127" layer="21"/>
+<wire x1="0.003" y1="22.512" x2="16.003" y2="22.512" width="0.127" layer="21"/>
+<wire x1="16.003" y1="22.512" x2="16.003" y2="-1.488" width="0.127" layer="21"/>
+<pad name="VCC" x="0.003" y="0.012" drill="0.6"/>
+<pad name="GPIO13" x="0" y="2" drill="0.6"/>
+<pad name="GPIO12" x="0" y="4" drill="0.6"/>
+<pad name="GPIO14" x="0" y="6" drill="0.6"/>
+<pad name="GPIO16" x="0" y="8" drill="0.6"/>
+<pad name="EN" x="0" y="10" drill="0.6"/>
+<pad name="ADC" x="0" y="12" drill="0.6"/>
+<pad name="RST" x="0" y="14" drill="0.6"/>
+<pad name="GND" x="16" y="0" drill="0.6"/>
+<pad name="GPIO15" x="16" y="2" drill="0.6"/>
+<pad name="GPIO02" x="16" y="4" drill="0.6"/>
+<pad name="GPIO00" x="16" y="6" drill="0.6"/>
+<pad name="GPIO04" x="16" y="8" drill="0.6"/>
+<pad name="GPIO05" x="16" y="10" drill="0.6"/>
+<pad name="RX" x="16" y="12" drill="0.6"/>
+<pad name="TX" x="16" y="14" drill="0.6"/>
+<wire x1="0" y1="-1.524" x2="16.002" y2="-1.524" width="0.127" layer="21"/>
+<wire x1="16.002" y1="-1.524" x2="16.002" y2="-1.4224" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
-<symbol name="ESP8266">
-<wire x1="35.56" y1="-22.86" x2="35.56" y2="-68.58" width="0.254" layer="94"/>
-<wire x1="35.56" y1="-68.58" x2="-25.4" y2="-68.58" width="0.254" layer="94"/>
-<wire x1="-25.4" y1="-68.58" x2="-25.4" y2="-22.86" width="0.254" layer="94"/>
-<pin name="VCC" x="-30.48" y="-63.5" length="middle"/>
-<pin name="GPIO13" x="-30.48" y="-58.42" length="middle"/>
-<pin name="GPIO12" x="-30.48" y="-53.34" length="middle"/>
-<pin name="GPIO14" x="-30.48" y="-48.26" length="middle"/>
-<pin name="GPIO16" x="-30.48" y="-43.18" length="middle"/>
-<pin name="EN" x="-30.48" y="-38.1" length="middle"/>
-<pin name="ADC" x="-30.48" y="-33.02" length="middle"/>
-<pin name="RST" x="-30.48" y="-27.94" length="middle"/>
-<wire x1="-25.4" y1="-22.86" x2="35.56" y2="-22.86" width="0.254" layer="94"/>
-<pin name="TX" x="40.64" y="-27.94" length="middle" rot="R180"/>
-<pin name="RX" x="40.64" y="-33.02" length="middle" rot="R180"/>
-<pin name="GPIO05" x="40.64" y="-38.1" length="middle" rot="R180"/>
-<pin name="GPIO04" x="40.64" y="-43.18" length="middle" rot="R180"/>
-<pin name="GPIO00" x="40.64" y="-48.26" length="middle" rot="R180"/>
-<pin name="GPIO02" x="40.64" y="-53.34" length="middle" rot="R180"/>
-<pin name="GPIO15" x="40.64" y="-58.42" length="middle" rot="R180"/>
-<pin name="GND" x="40.64" y="-63.5" length="middle" rot="R180"/>
-<pin name="GPIO09" x="2.54" y="-73.66" length="middle" rot="R90"/>
-<pin name="GPIO10" x="7.62" y="-73.66" length="middle" rot="R90"/>
-<pin name="MOSI" x="12.7" y="-73.66" length="middle" rot="R90"/>
-<pin name="SCLK" x="17.78" y="-73.66" length="middle" rot="R90"/>
-<pin name="MISO" x="-2.54" y="-73.66" length="middle" rot="R90"/>
-<pin name="CS0" x="-7.62" y="-73.66" length="middle" rot="R90"/>
-</symbol>
 <symbol name="PIN">
 <pin name="TX" x="-40.64" y="0" length="middle" rot="R90"/>
 <pin name="RX" x="-33.02" y="0" length="middle" rot="R90"/>
@@ -4870,44 +4837,31 @@ RJ45 Jack connectors&lt;br&gt;
 <pin name="VOUT" x="2.54" y="12.7" length="middle" rot="R180"/>
 <text x="-25.4" y="15.24" size="2.54" layer="94">AMS1117</text>
 </symbol>
+<symbol name="ESP8266">
+<description>néhány portot kivettem a diagramból, mert nem használom a projektben</description>
+<wire x1="35.56" y1="-22.86" x2="35.56" y2="-68.58" width="0.254" layer="94"/>
+<wire x1="35.56" y1="-68.58" x2="-25.4" y2="-68.58" width="0.254" layer="94"/>
+<wire x1="-25.4" y1="-68.58" x2="-25.4" y2="-22.86" width="0.254" layer="94"/>
+<pin name="VCC" x="-30.48" y="-63.5" length="middle"/>
+<pin name="GPIO13" x="-30.48" y="-58.42" length="middle"/>
+<pin name="GPIO12" x="-30.48" y="-53.34" length="middle"/>
+<pin name="GPIO14" x="-30.48" y="-48.26" length="middle"/>
+<pin name="GPIO16" x="-30.48" y="-43.18" length="middle"/>
+<pin name="EN" x="-30.48" y="-38.1" length="middle"/>
+<pin name="ADC" x="-30.48" y="-33.02" length="middle"/>
+<pin name="RST" x="-30.48" y="-27.94" length="middle"/>
+<wire x1="-25.4" y1="-22.86" x2="35.56" y2="-22.86" width="0.254" layer="94"/>
+<pin name="TX" x="40.64" y="-27.94" length="middle" rot="R180"/>
+<pin name="RX" x="40.64" y="-33.02" length="middle" rot="R180"/>
+<pin name="GPIO05" x="40.64" y="-38.1" length="middle" rot="R180"/>
+<pin name="GPIO04" x="40.64" y="-43.18" length="middle" rot="R180"/>
+<pin name="GPIO00" x="40.64" y="-48.26" length="middle" rot="R180"/>
+<pin name="GPIO02" x="40.64" y="-53.34" length="middle" rot="R180"/>
+<pin name="GPIO15" x="40.64" y="-58.42" length="middle" rot="R180"/>
+<pin name="GND" x="40.64" y="-63.5" length="middle" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
-<deviceset name="ESP8266">
-<gates>
-<gate name="G$1" symbol="ESP8266" x="25.4" y="68.58"/>
-</gates>
-<devices>
-<device name="" package="ESP8266">
-<connects>
-<connect gate="G$1" pin="ADC" pad="ADC"/>
-<connect gate="G$1" pin="CS0" pad="CS0"/>
-<connect gate="G$1" pin="EN" pad="EN"/>
-<connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="GPIO00" pad="GPIO00"/>
-<connect gate="G$1" pin="GPIO02" pad="GPIO02"/>
-<connect gate="G$1" pin="GPIO04" pad="GPIO04"/>
-<connect gate="G$1" pin="GPIO05" pad="GPIO05"/>
-<connect gate="G$1" pin="GPIO09" pad="GPIO09"/>
-<connect gate="G$1" pin="GPIO10" pad="GPIO10"/>
-<connect gate="G$1" pin="GPIO12" pad="GPIO12"/>
-<connect gate="G$1" pin="GPIO13" pad="GPIO13"/>
-<connect gate="G$1" pin="GPIO14" pad="GPIO14"/>
-<connect gate="G$1" pin="GPIO15" pad="GPIO15"/>
-<connect gate="G$1" pin="GPIO16" pad="GPIO16"/>
-<connect gate="G$1" pin="MISO" pad="MISO"/>
-<connect gate="G$1" pin="MOSI" pad="MOSI"/>
-<connect gate="G$1" pin="RST" pad="RST"/>
-<connect gate="G$1" pin="RX" pad="RX"/>
-<connect gate="G$1" pin="SCLK" pad="SCLK"/>
-<connect gate="G$1" pin="TX" pad="TX"/>
-<connect gate="G$1" pin="VCC" pad="VCC"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="PIN">
 <description>Ez egy csatlakozó. Nem találtam hasonlót a könyvtárak között.</description>
 <gates>
@@ -4938,6 +4892,36 @@ RJ45 Jack connectors&lt;br&gt;
 <connect gate="G$1" pin="GND" pad="GND"/>
 <connect gate="G$1" pin="VIN" pad="IN"/>
 <connect gate="G$1" pin="VOUT" pad="OUT"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ESP8266">
+<gates>
+<gate name="G$1" symbol="ESP8266" x="25.4" y="68.58"/>
+</gates>
+<devices>
+<device name="" package="ESP8266">
+<connects>
+<connect gate="G$1" pin="ADC" pad="ADC"/>
+<connect gate="G$1" pin="EN" pad="EN"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="GPIO00" pad="GPIO00"/>
+<connect gate="G$1" pin="GPIO02" pad="GPIO02"/>
+<connect gate="G$1" pin="GPIO04" pad="GPIO04"/>
+<connect gate="G$1" pin="GPIO05" pad="GPIO05"/>
+<connect gate="G$1" pin="GPIO12" pad="GPIO12"/>
+<connect gate="G$1" pin="GPIO13" pad="GPIO13"/>
+<connect gate="G$1" pin="GPIO14" pad="GPIO14"/>
+<connect gate="G$1" pin="GPIO15" pad="GPIO15"/>
+<connect gate="G$1" pin="GPIO16" pad="GPIO16"/>
+<connect gate="G$1" pin="RST" pad="RST"/>
+<connect gate="G$1" pin="RX" pad="RX"/>
+<connect gate="G$1" pin="TX" pad="TX"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -7200,11 +7184,11 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <part name="T1" library="transistor-neu-to92" library_urn="urn:adsk.eagle:library:397" deviceset="*-NPN-" device="TO92-EBC" package3d_urn="urn:adsk.eagle:package:28763/2" technology="2N2222"/>
 <part name="T2" library="transistor-neu-to92" library_urn="urn:adsk.eagle:library:397" deviceset="*-NPN-" device="TO92-EBC" package3d_urn="urn:adsk.eagle:package:28763/2" technology="2N2222"/>
 <part name="T3" library="transistor-neu-to92" library_urn="urn:adsk.eagle:library:397" deviceset="*-NPN-" device="TO92-EBC" package3d_urn="urn:adsk.eagle:package:28763/2" technology="2N2222"/>
-<part name="U$2" library="MyLIB" deviceset="ESP8266" device=""/>
 <part name="U$3" library="MyLIB" deviceset="PIN" device=""/>
 <part name="R5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/12" package3d_urn="urn:adsk.eagle:package:23489/1"/>
 <part name="R6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/12" package3d_urn="urn:adsk.eagle:package:23489/1"/>
 <part name="U$1" library="MyLIB" deviceset="AMS1117" device=""/>
+<part name="U$2" library="MyLIB" deviceset="ESP8266" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7297,7 +7281,6 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <attribute name="NAME" x="187.96" y="132.08" size="1.778" layer="95"/>
 <attribute name="VALUE" x="187.96" y="129.54" size="1.778" layer="96"/>
 </instance>
-<instance part="U$2" gate="G$1" x="93.98" y="175.26" smashed="yes"/>
 <instance part="U$3" gate="G$1" x="165.1" y="157.48" smashed="yes"/>
 <instance part="R5" gate="G$1" x="147.32" y="175.26" smashed="yes" rot="R270">
 <attribute name="NAME" x="148.8186" y="179.07" size="1.778" layer="95" rot="R270"/>
@@ -7308,6 +7291,7 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <attribute name="VALUE" x="136.398" y="179.07" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="U$1" gate="G$1" x="-27.94" y="96.52" smashed="yes"/>
+<instance part="U$2" gate="G$1" x="93.98" y="175.26" smashed="yes"/>
 </instances>
 <busses>
 </busses>
@@ -7345,9 +7329,9 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 </segment>
 <segment>
 <pinref part="SUPPLY8" gate="GND" pin="GND"/>
-<wire x1="134.62" y1="111.76" x2="134.62" y2="109.22" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="GND"/>
 <wire x1="134.62" y1="114.3" x2="134.62" y2="111.76" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="GND"/>
+<wire x1="134.62" y1="111.76" x2="134.62" y2="109.22" width="0.1524" layer="91"/>
 <junction x="134.62" y="111.76"/>
 </segment>
 <segment>
@@ -7472,11 +7456,6 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <label x="27.94" y="106.68" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="VCC"/>
-<wire x1="63.5" y1="111.76" x2="58.42" y2="111.76" width="0.1524" layer="91"/>
-<label x="55.88" y="111.76" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="R6" gate="G$1" pin="1"/>
 <wire x1="139.7" y1="180.34" x2="139.7" y2="185.42" width="0.1524" layer="91"/>
 <label x="137.16" y="182.88" size="1.778" layer="95"/>
@@ -7485,6 +7464,11 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <pinref part="R5" gate="G$1" pin="1"/>
 <wire x1="147.32" y1="180.34" x2="147.32" y2="185.42" width="0.1524" layer="91"/>
 <label x="144.78" y="182.88" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="VCC"/>
+<wire x1="63.5" y1="111.76" x2="58.42" y2="111.76" width="0.1524" layer="91"/>
+<label x="58.42" y="111.76" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DATA3" class="0">
@@ -7567,7 +7551,6 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <segment>
 <wire x1="63.5" y1="157.48" x2="63.5" y2="147.32" width="0.1524" layer="91"/>
 <label x="93.98" y="157.48" size="1.778" layer="95"/>
-<pinref part="U$2" gate="G$1" pin="RST"/>
 <wire x1="63.5" y1="157.48" x2="96.52" y2="157.48" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="157.48" x2="96.52" y2="154.94" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="154.94" x2="139.7" y2="154.94" width="0.1524" layer="91"/>
@@ -7576,6 +7559,7 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <pinref part="R6" gate="G$1" pin="2"/>
 <wire x1="139.7" y1="157.48" x2="139.7" y2="170.18" width="0.1524" layer="91"/>
 <junction x="139.7" y="157.48"/>
+<pinref part="U$2" gate="G$1" pin="RST"/>
 </segment>
 </net>
 <net name="GPIO00" class="0">
@@ -7585,11 +7569,11 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <wire x1="149.86" y1="152.4" x2="149.86" y2="127" width="0.1524" layer="91"/>
 <wire x1="149.86" y1="127" x2="134.62" y2="127" width="0.1524" layer="91"/>
 <label x="142.24" y="149.86" size="1.778" layer="95"/>
-<pinref part="U$2" gate="G$1" pin="GPIO00"/>
 <pinref part="U$3" gate="G$1" pin="GPIO00"/>
 <pinref part="R5" gate="G$1" pin="2"/>
 <wire x1="147.32" y1="157.48" x2="147.32" y2="170.18" width="0.1524" layer="91"/>
 <junction x="147.32" y="157.48"/>
+<pinref part="U$2" gate="G$1" pin="GPIO00"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -7600,22 +7584,22 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 </net>
 <net name="TX" class="0">
 <segment>
-<pinref part="U$2" gate="G$1" pin="TX"/>
 <wire x1="134.62" y1="147.32" x2="124.46" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="147.32" x2="124.46" y2="157.48" width="0.1524" layer="91"/>
 <label x="121.92" y="149.86" size="1.778" layer="95"/>
 <pinref part="U$3" gate="G$1" pin="TX"/>
+<pinref part="U$2" gate="G$1" pin="TX"/>
 </segment>
 </net>
 <net name="RX" class="0">
 <segment>
-<pinref part="U$2" gate="G$1" pin="RX"/>
 <wire x1="134.62" y1="142.24" x2="137.16" y2="142.24" width="0.1524" layer="91"/>
 <wire x1="137.16" y1="142.24" x2="137.16" y2="152.4" width="0.1524" layer="91"/>
 <wire x1="137.16" y1="152.4" x2="132.08" y2="152.4" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="152.4" x2="132.08" y2="157.48" width="0.1524" layer="91"/>
 <label x="137.16" y="144.78" size="1.778" layer="95"/>
 <pinref part="U$3" gate="G$1" pin="RX"/>
+<pinref part="U$2" gate="G$1" pin="RX"/>
 </segment>
 </net>
 </nets>

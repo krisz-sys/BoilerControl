@@ -4781,16 +4781,6 @@ RJ45 Jack connectors&lt;br&gt;
 <wire x1="9.5" y1="-1.9" x2="-1.9" y2="-1.9" width="0.127" layer="21"/>
 <wire x1="-1.9" y1="-1.9" x2="-1.9" y2="1.9" width="0.127" layer="21"/>
 </package>
-<package name="AMS1117">
-<wire x1="0" y1="0" x2="6.5" y2="0" width="0.1524" layer="21"/>
-<wire x1="6.5" y1="0" x2="6.5" y2="3.5" width="0.1524" layer="21"/>
-<wire x1="6.5" y1="3.5" x2="0" y2="3.5" width="0.1524" layer="21"/>
-<wire x1="0" y1="3.5" x2="0" y2="0" width="0.1524" layer="21"/>
-<smd name="P$1" x="3.35" y="4.5" dx="3" dy="1.75" layer="1"/>
-<smd name="OUT" x="3.35" y="-0.75" dx="0.7" dy="1.75" layer="1" rot="R180"/>
-<smd name="IN" x="1" y="-0.75" dx="0.7" dy="1.75" layer="1"/>
-<smd name="GND" x="5.5" y="-0.75" dx="0.7" dy="1.75" layer="1"/>
-</package>
 <package name="ESP8266">
 <wire x1="0.003" y1="-1.488" x2="0.003" y2="22.512" width="0.127" layer="21"/>
 <wire x1="0.003" y1="22.512" x2="16.003" y2="22.512" width="0.127" layer="21"/>
@@ -4814,6 +4804,17 @@ RJ45 Jack connectors&lt;br&gt;
 <wire x1="0" y1="-1.524" x2="16.002" y2="-1.524" width="0.127" layer="21"/>
 <wire x1="16.002" y1="-1.524" x2="16.002" y2="-1.4224" width="0.127" layer="21"/>
 </package>
+<package name="AMS1117">
+<wire x1="0" y1="0" x2="6.5" y2="0" width="0.1524" layer="21"/>
+<wire x1="6.5" y1="0" x2="6.5" y2="3.5" width="0.1524" layer="21"/>
+<wire x1="6.5" y1="3.5" x2="0" y2="3.5" width="0.1524" layer="21"/>
+<wire x1="0" y1="3.5" x2="0" y2="0" width="0.1524" layer="21"/>
+<smd name="OUT2" x="3.35" y="4.5" dx="3" dy="1.75" layer="1"/>
+<smd name="OUT" x="3.35" y="-0.75" dx="0.7" dy="1.75" layer="1" rot="R180"/>
+<smd name="IN" x="1" y="-0.75" dx="0.7" dy="1.75" layer="1"/>
+<smd name="GND" x="5.5" y="-0.75" dx="0.7" dy="1.75" layer="1"/>
+<wire x1="3.175" y1="4.064" x2="3.175" y2="-0.254" width="0.127" layer="1"/>
+</package>
 </packages>
 <symbols>
 <symbol name="PIN">
@@ -4826,16 +4827,6 @@ RJ45 Jack connectors&lt;br&gt;
 <wire x1="-7.62" y1="5.08" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
 <wire x1="-7.62" y1="10.16" x2="-43.18" y2="10.16" width="0.254" layer="94"/>
 <wire x1="-43.18" y1="10.16" x2="-43.18" y2="5.08" width="0.254" layer="94"/>
-</symbol>
-<symbol name="AMS1117">
-<wire x1="-33.02" y1="20.32" x2="-2.54" y2="20.32" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="20.32" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="5.08" x2="-33.02" y2="5.08" width="0.254" layer="94"/>
-<wire x1="-33.02" y1="5.08" x2="-33.02" y2="20.32" width="0.254" layer="94"/>
-<pin name="GND" x="-17.78" y="0" length="middle" rot="R90"/>
-<pin name="VIN" x="-38.1" y="12.7" length="middle"/>
-<pin name="VOUT" x="2.54" y="12.7" length="middle" rot="R180"/>
-<text x="-25.4" y="15.24" size="2.54" layer="94">AMS1117</text>
 </symbol>
 <symbol name="ESP8266">
 <description>néhány portot kivettem a diagramból, mert nem használom a projektben</description>
@@ -4860,6 +4851,16 @@ RJ45 Jack connectors&lt;br&gt;
 <pin name="GPIO15" x="40.64" y="-58.42" length="middle" rot="R180"/>
 <pin name="GND" x="40.64" y="-63.5" length="middle" rot="R180"/>
 </symbol>
+<symbol name="AMS1117">
+<wire x1="-33.02" y1="20.32" x2="-2.54" y2="20.32" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="20.32" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="5.08" x2="-33.02" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-33.02" y1="5.08" x2="-33.02" y2="20.32" width="0.254" layer="94"/>
+<pin name="GND" x="-17.78" y="0" length="middle" rot="R90"/>
+<pin name="VIN" x="-38.1" y="12.7" length="middle"/>
+<pin name="VOUT" x="2.54" y="12.7" length="middle" rot="R180"/>
+<text x="-25.4" y="15.24" size="2.54" layer="94">AMS1117</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="PIN">
@@ -4875,23 +4876,6 @@ RJ45 Jack connectors&lt;br&gt;
 <connect gate="G$1" pin="RST" pad="RST"/>
 <connect gate="G$1" pin="RX" pad="RX"/>
 <connect gate="G$1" pin="TX" pad="TX"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="AMS1117">
-<gates>
-<gate name="G$1" symbol="AMS1117" x="-10.16" y="-17.78"/>
-</gates>
-<devices>
-<device name="" package="AMS1117">
-<connects>
-<connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="VIN" pad="IN"/>
-<connect gate="G$1" pin="VOUT" pad="OUT"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -4922,6 +4906,23 @@ RJ45 Jack connectors&lt;br&gt;
 <connect gate="G$1" pin="RX" pad="RX"/>
 <connect gate="G$1" pin="TX" pad="TX"/>
 <connect gate="G$1" pin="VCC" pad="VCC"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="AMS1117">
+<gates>
+<gate name="G$1" symbol="AMS1117" x="33.02" y="-5.08"/>
+</gates>
+<devices>
+<device name="" package="AMS1117">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="VIN" pad="IN"/>
+<connect gate="G$1" pin="VOUT" pad="OUT"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -7187,8 +7188,8 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <part name="U$3" library="MyLIB" deviceset="PIN" device=""/>
 <part name="R5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/12" package3d_urn="urn:adsk.eagle:package:23489/1"/>
 <part name="R6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/12" package3d_urn="urn:adsk.eagle:package:23489/1"/>
-<part name="U$1" library="MyLIB" deviceset="AMS1117" device=""/>
 <part name="U$2" library="MyLIB" deviceset="ESP8266" device=""/>
+<part name="U$1" library="MyLIB" deviceset="AMS1117" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7290,8 +7291,8 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <attribute name="NAME" x="141.1986" y="179.07" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="136.398" y="179.07" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="U$1" gate="G$1" x="-27.94" y="96.52" smashed="yes"/>
 <instance part="U$2" gate="G$1" x="93.98" y="175.26" smashed="yes"/>
+<instance part="U$1" gate="G$1" x="-27.94" y="96.52" smashed="yes"/>
 </instances>
 <busses>
 </busses>

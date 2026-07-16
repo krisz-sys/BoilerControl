@@ -10626,12 +10626,12 @@ general purpose rectifier, 1 A</description>
 <attribute name="NAME" x="21.59" y="135.6614" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="21.59" y="140.462" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="J1" gate="G$1" x="68.58" y="86.36" smashed="yes">
-<attribute name="NAME" x="71.12" y="86.36" size="1.778" layer="95"/>
-<attribute name="VALUE" x="73.66" y="82.55" size="1.778" layer="96"/>
+<instance part="J1" gate="G$1" x="73.66" y="91.44" smashed="yes">
+<attribute name="NAME" x="76.2" y="91.44" size="1.778" layer="95"/>
+<attribute name="VALUE" x="78.74" y="87.63" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY3" gate="GND" x="68.58" y="78.74" smashed="yes">
-<attribute name="VALUE" x="66.675" y="75.565" size="1.778" layer="96"/>
+<instance part="SUPPLY3" gate="GND" x="73.66" y="83.82" smashed="yes">
+<attribute name="VALUE" x="71.755" y="80.645" size="1.778" layer="96"/>
 </instance>
 <instance part="SUPPLY4" gate="GND" x="162.56" y="109.22" smashed="yes">
 <attribute name="VALUE" x="160.655" y="106.045" size="1.778" layer="96"/>
@@ -10764,7 +10764,7 @@ general purpose rectifier, 1 A</description>
 <segment>
 <pinref part="J1" gate="G$1" pin="1"/>
 <pinref part="SUPPLY3" gate="GND" pin="GND"/>
-<wire x1="68.58" y1="83.82" x2="68.58" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="88.9" x2="73.66" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SUPPLY4" gate="GND" pin="GND"/>
@@ -10873,8 +10873,8 @@ general purpose rectifier, 1 A</description>
 <net name="VCC" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="2"/>
-<wire x1="71.12" y1="83.82" x2="71.12" y2="78.74" width="0.1524" layer="91"/>
-<label x="71.12" y="78.74" size="1.778" layer="95"/>
+<wire x1="76.2" y1="88.9" x2="76.2" y2="83.82" width="0.1524" layer="91"/>
+<label x="76.2" y="83.82" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="127" y1="86.36" x2="119.38" y2="86.36" width="0.1524" layer="91"/>
