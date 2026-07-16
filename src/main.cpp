@@ -66,11 +66,12 @@ float temperature=-10;
 bool ledSPMode=true;                       // false => led SP from the POT,       true => led SP from the sender
 int lastSample=0;
 bool firstStart=true;
+
 //----------------------------------------wifi
 
 //const char *ssid = "BV";          //Enter your wifi SSID
-const char *ssid = "DIGI-24-3450";
-const char *password = "qHpZDQ9kUZ";        //Enter your wifi Password
+const char *ssid = "yourSSID";
+const char *password = "yourPassword";        //Enter your wifi Password
 IPAddress local_IP(192, 168, 1, 223);       // a telefonba ezt az ip-t kell beírni
 //IPAddress local_IP(192, 168, 1, 223);
 IPAddress gateway(192, 168, 1,1);
